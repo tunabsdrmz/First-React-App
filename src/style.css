@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    height: 60vh;
+}
+#title{
+    color: rgb(53, 53, 165);
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+#description{
+    color: rgb(53, 53, 165);
+    font-size: 20px;
+    font-weight: 500;
+}
+#start-quiz{
+    border-color: rgb(53, 53, 165);
+    border-radius: 9px;
+    padding: 20px 65px;
+    background-color: rgb(53, 53, 165);
+    font-size: 20px;
+    color: white;
+}
+#start-quiz:hover{
+    background-color: rgb(26, 26, 96);
+    border-color:rgb(26, 26, 96);
+}
+.app-main-container{
+    margin-top: 20px;
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+    padding-top: 60px;
+}
+#question-h1{
+    font-size: 20px;
+    color: rgb(53, 53, 165);
+    width: 80%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.button-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 5px;
+    gap: 0.3em;
+}
+.buttons{
+    border-radius: 8px;
+    border-color: rgb(87, 87, 206);
+    background-color: rgb(230, 225, 236);
+    color: rgb(80, 81, 82);
+    font-weight: bold;
+    padding: 7px 5px;
+    width: 165px;
+}
+.next-button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.button{
+    color: rgb(125, 21, 21);
+    padding: 10px 75px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(73, 36, 220);
+    border-color: rgb(90, 90, 230);
+}
+
+.question-div{
+    width: 350px;
+    border: 2px solid rgb(86, 86, 85);
+    height: 50vh;
+    margin-top: 70px;
+    background-color: rgb(145, 145, 143);
+    border-radius: 15px;
+}
+.question-num{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkblue;
+    text-align: center;
+    
+    padding-top: 35px;
+}
+.question{
+    font-size: 24px;
+    padding: 10px 12px;
+    text-align: center;
+    color: rgb(1, 1, 105);
+}
+.select{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
+.result-p{
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+    margin-top: 12px;
+}
+@media (min-width:450px) {
+    
+    .question-div{
+        height: 60vh;
+    }
+}
